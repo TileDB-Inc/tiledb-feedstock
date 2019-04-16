@@ -7,10 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
-
+  #fn: {{ name }}-{{ version }}.tar.gz
+  #url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
+  #sha256: {{ sha256 }}
+  git_url: https://github.com/TileDB-Inc/TileDB
+  git_rev: 0516115ecfa6f265e0700bea4ce72bbbb0441ff3
 build:
   number: 1
   skip: True  # [win32]

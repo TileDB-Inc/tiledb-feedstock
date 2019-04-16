@@ -8,7 +8,6 @@ cmake \
   -DTILEDB_TESTS=OFF \
   -DTILEDB_INSTALL_LIBDIR=lib \
   -DTILEDB_HDFS=ON \
-  -DSANITIZER="OFF;-DCOMPILER_SUPPORTS_AVX2:BOOL=FALSE" \
   -DTILEDB_S3=ON ..
-make -j ${CPU_COUNT}
-make -C tiledb install
+make -j ${CPU_COUNT} VERBOSE=1
+make -C tiledb install VERBOSE=1
