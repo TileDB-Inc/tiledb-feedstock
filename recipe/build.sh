@@ -1,6 +1,9 @@
 #!/bin/sh
 set -exo pipefail
 
+export CFLAGS=-Wno-error
+export CXXFLAGS=-Wno-error
+
 if [[ $target_platform =~ osx.* ]]; then
   CURL_LIBS_APPEND=`curl-config --libs`
   export LDFLAGS="${LDFLAGS} ${CURL_LIBS_APPEND}"
