@@ -4,12 +4,15 @@ set -exo pipefail
 echo "=============="
 ls $SRC_DIR
 echo "=============="
+ls $FEEDSTOCK_ROOT
+ls $FEEDSTOCK_ROOT/recipe
+echo "=============="
 
 # Use wrappers to disable -Werror
 export NN_CXX_ORIG=$CXX
 export NN_CC_ORIG=$CC
-export CXX=$SRC_DIR/cxx_wrap.sh
-export CC=$SRC_DIR/cc_wrap.sh
+export CXX=$FEEDSTOCK_ROOT/recipe/cxx_wrap.sh
+export CC=$FEEDSTOCK_ROOT/recipe/cc_wrap.sh
 
 if [[ $target_platform =~ osx.* ]]; then
   CURL_LIBS_APPEND=`curl-config --libs`
