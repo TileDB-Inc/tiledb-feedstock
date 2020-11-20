@@ -1,4 +1,4 @@
 #!/bin/sh
 
 args="${@##-Werror*}"
-$NN_CC_ORIG $args
+$NN_CXX_ORIG $args
