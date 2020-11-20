@@ -1,11 +1,15 @@
 #!/bin/sh
 set -exo pipefail
 
+echo "=============="
+ls $SRC_DIR
+echo "=============="
+
 # Use wrappers to disable -Werror
 export NN_CXX_ORIG=$CXX
 export NN_CC_ORIG=$CC
-export CXX=`pwd`/cxx_wrap.sh
-export CC=`pwd`/cc_wrap.sh
+export CXX=$SRC_DIR/cxx_wrap.sh
+export CC=$SRC_DIR/cc_wrap.sh
 
 if [[ $target_platform =~ osx.* ]]; then
   CURL_LIBS_APPEND=`curl-config --libs`
