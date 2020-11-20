@@ -2,11 +2,9 @@
 set -exo pipefail
 
 echo "=============="
-echo $SRC_DIR
 ls $SRC_DIR
 echo "=============="
 ls $FEEDSTOCK_ROOT
-ls $FEEDSTOCK_ROOT/recipe
 echo "=============="
 
 # Use wrappers to disable -Werror
