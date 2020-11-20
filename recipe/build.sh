@@ -1,8 +1,11 @@
 #!/bin/sh
 set -exo pipefail
 
-export CFLAGS=-Wno-error
-export CXXFLAGS=-Wno-error
+# Use wrappers to disable -Werror
+export NN_CXX_ORIG=$CXX
+export NN_CC_ORIG=$CC
+export CXX=`pwd`/cxx_wrap.sh
+export CC=`pwd`/cc_wrap.sh
 
 if [[ $target_platform =~ osx.* ]]; then
   CURL_LIBS_APPEND=`curl-config --libs`
