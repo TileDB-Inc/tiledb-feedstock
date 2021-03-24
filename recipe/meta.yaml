@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version =  {{GIT_BUILD_STR}} %}
+{% set version =  {{ environ.get(GIT_BUILD_STR) }} %}
 
 package:
   name: tiledb
