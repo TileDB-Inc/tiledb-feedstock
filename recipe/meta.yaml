@@ -27,14 +27,12 @@ requirements:
     - bzip2
     - zstd
     - lz4-c
-    - openssl  # [osx]
     - curl  # [arm64]
   run:
     - zlib
     - bzip2
     - zstd
     - lz4-c
-    - openssl  # [osx]
     - curl  # [arm64]
 
 
