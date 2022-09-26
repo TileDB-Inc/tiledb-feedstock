@@ -10,27 +10,27 @@ jobs:
     matrix:
       linux_64_openssl1.1.1:
         CONFIG: linux_64_openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_openssl3:
         CONFIG: linux_64_openssl3
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_openssl1.1.1:
         CONFIG: linux_aarch64_openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_openssl3:
         CONFIG: linux_aarch64_openssl3
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_openssl1.1.1:
         CONFIG: linux_ppc64le_openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_openssl3:
         CONFIG: linux_ppc64le_openssl3
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
 
@@ -61,5 +61,3 @@ jobs:
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-      FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)

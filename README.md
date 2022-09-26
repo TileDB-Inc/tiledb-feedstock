@@ -5,7 +5,7 @@ Home: http://tiledb.io
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tiledb-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/TileDB-Inc/tiledb-feedstock/blob/john-testing/LICENSE.txt)
 
 Summary: TileDB sparse and dense multi-dimensional array data management
 
@@ -30,8 +30,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main">
+          <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+            <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing">
           </a>
         </summary>
         <table>
@@ -39,85 +39,85 @@ Current build status
           <tbody><tr>
               <td>linux_64_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_64_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_64_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_64_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_64_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_aarch64_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_aarch64_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_ppc64le_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=linux&configuration=linux_ppc64le_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=osx&configuration=osx_64_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=osx&configuration=osx_64_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=osx&configuration=osx_64_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=osx&configuration=osx_64_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=osx&configuration=osx_arm64_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=osx&configuration=osx_arm64_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_openssl1.1.1</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=win&configuration=win_64_openssl1.1.1" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=win&configuration=win_64_openssl1.1.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_openssl3</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2075&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=main&jobName=win&configuration=win_64_openssl3" alt="variant">
+                <a href="https://dev.azure.com/TileDB-Inc/feedstock-builds/_build/latest?definitionId=&branchName=john-testing">
+                  <img src="https://dev.azure.com/TileDB-Inc/feedstock-builds/_apis/build/status/tiledb-feedstock?branchName=john-testing&jobName=win&configuration=win_64_openssl3" alt="variant">
                 </a>
               </td>
             </tr>
@@ -234,7 +234,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/tiledb-feedstock are
+Note that all branches in the TileDB-Inc/tiledb-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

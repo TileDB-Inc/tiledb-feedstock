@@ -10,16 +10,16 @@ jobs:
     matrix:
       osx_64_openssl1.1.1:
         CONFIG: osx_64_openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
       osx_64_openssl3:
         CONFIG: osx_64_openssl3
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
       osx_arm64_openssl1.1.1:
         CONFIG: osx_arm64_openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
       osx_arm64_openssl3:
         CONFIG: osx_arm64_openssl3
-        UPLOAD_PACKAGES: 'True'
+        UPLOAD_PACKAGES: 'False'
   timeoutInMinutes: 360
 
   steps:
@@ -38,5 +38,3 @@ jobs:
     displayName: Run OSX build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-      FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
