@@ -9,7 +9,9 @@ build_platform:
   osx_arm64: osx_64
 conda_forge_output_validation: False
 github:
-  branch_name: main
+  user_or_org: TileDB-Inc
+  repo_name: tiledb-feedstock
+  branch_name: john-testing
   tooling_branch_name: main
 provider:
   linux_aarch64: default
