@@ -1,0 +1,31 @@
+name: nightlies
+on:
+  schedule: # Every night at 2 AM UTC (9 PM EST; 10 PM EDT)
+    - cron: "* 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  nightlies:
+    runs-on: ubuntu-latest
+    name: nightlies
+    env:
+      TZ: "America/New_York"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update recipe version
+        run: |
+          echo "TZ: $TZ"
+          echo "date: $(date)"
+          version_current=$(curl -sL https://raw.githubusercontent.com/TileDB-Inc/TileDB/dev/tiledb/sm/c_api/tiledb_version.h | grep '#define' | cut -d' ' -f3 | tr '\n' '.')
+          version="${version_current}$(date +%Y_%m_%d)"
+          sed -i \
+            s/"{% set version = \".*\" %}"/"{% set version = \"$version\" %}"/ \
+            recipe/meta.yaml
+      - name: Push
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "runneradmin@github.com"
+          git add recipe/meta.yaml
+          git commit --allow-empty -m "Nightly build for $version"
+          git push origin nightlies
