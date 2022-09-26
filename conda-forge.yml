@@ -1,4 +1,5 @@
 azure:
+  upload_packages: false
   settings_win:
     pool:
       vmImage: windows-2019
@@ -6,7 +7,7 @@ build_platform:
   linux_aarch64: linux_64
   linux_ppc64le: linux_64
   osx_arm64: osx_64
-conda_forge_output_validation: true
+conda_forge_output_validation: false
 github:
   branch_name: main
   tooling_branch_name: main
