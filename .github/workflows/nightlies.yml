@@ -28,4 +28,4 @@ jobs:
           git config --local user.email "runneradmin@github.com"
           git add recipe/meta.yaml
           git commit --allow-empty -m "Nightly build for $version"
-          git push origin nightlies
+          git push origin john-testing
