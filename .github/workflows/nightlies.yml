@@ -3,7 +3,6 @@ on:
   schedule: # Every night at 2 AM UTC (9 PM EST; 10 PM EDT)
     - cron: "* 2 * * *"
   workflow_dispatch:
-  push:
 permissions:
   contents: write
 jobs:
