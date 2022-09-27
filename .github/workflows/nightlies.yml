@@ -22,8 +22,7 @@ jobs:
           sed -i \
             s/"{% set version = \".*\" %}"/"{% set version = \"$version\" %}"/ \
             recipe/meta.yaml
-      - name: Push
-        run: |
+          # Push update to GitHub
           git config --local user.name "GitHub Actions"
           git config --local user.email "runneradmin@github.com"
           git add recipe/meta.yaml
