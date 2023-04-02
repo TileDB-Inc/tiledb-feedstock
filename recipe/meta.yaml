@@ -24,6 +24,7 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
+    - vcpkg
   host:
     - bzip2
     - curl
