@@ -4,7 +4,7 @@
 
 package:
   name: tiledb
-  version: {{ version }}
+  version: 2.16.0.rc0
 
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
@@ -24,6 +24,7 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
+    - vcpkg
   host:
     - bzip2
     - curl
