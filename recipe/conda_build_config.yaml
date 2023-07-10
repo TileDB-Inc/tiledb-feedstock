@@ -4,9 +4,9 @@ MACOSX_DEPLOYMENT_TARGET:  # [osx and x86_64]
   - "10.14"                # [osx and x86_64]
 
 c_compiler:
-- vs2019 # [win]
+- vs2022 # [win]
 cxx_compiler:
-- vs2019 # [win]
+- vs2022 # [win]
 openssl:
 - '1.1.1'
 - '3'
