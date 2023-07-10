@@ -1,0 +1,302 @@
+{
+  "name": "google-cloud-cpp",
+  "version-string": "system",
+  "features": {
+    "accessapproval": {
+      "description": "Access Approval API C++ Client Library"
+    },
+    "accesscontextmanager": {
+      "description": "Access Context Manager API C++ Client Library"
+    },
+    "apigateway": {
+      "description": "API Gateway API C++ Client Library"
+    },
+    "apigeeconnect": {
+      "description": "Apigee Connect API C++ Client Library"
+    },
+    "appengine": {
+      "description": "App Engine Admin API C++ Client Library"
+    },
+    "artifactregistry": {
+      "description": "Artifact Registry API C++ Client Library"
+    },
+    "asset": {
+      "description": "Cloud Asset API C++ Client Library",
+      "supports": "!windows"
+    },
+    "assuredworkloads": {
+      "description": "Assured Workloads API C++ Client Library"
+    },
+    "automl": {
+      "description": "Cloud AutoML API C++ Client Library"
+    },
+    "baremetalsolution": {
+      "description": "Bare Metal Solution API C++ Client Library"
+    },
+    "batch": {
+      "description": "Batch API C++ Client Library"
+    },
+    "beyondcorp": {
+      "description": "BeyondCorp API C++ Client Library"
+    },
+    "bigquery": {
+      "description": "The Google Cloud BigQuery C++ client library"
+    },
+    "bigtable": {
+      "description": "The Google Cloud Bigtable C++ client library"
+    },
+    "billing": {
+      "description": "Cloud Billing Budget API C++ Client Library"
+    },
+    "binaryauthorization": {
+      "description": "Binary Authorization API C++ Client Library"
+    },
+    "certificatemanager": {
+      "description": "Certificate Manager API C++ Client Library"
+    },
+    "channel": {
+      "description": "Cloud Channel API C++ Client Library",
+      "supports": "!windows"
+    },
+    "cloudbuild": {
+      "description": "Cloud Build API C++ Client Library"
+    },
+    "composer": {
+      "description": "Cloud Composer C++ Client Library"
+    },
+    "connectors": {
+      "description": "Connectors API C++ Client Library"
+    },
+    "contactcenterinsights": {
+      "description": "Contact Center AI Insights API C++ Client Library"
+    },
+    "container": {
+      "description": "Kubernetes Engine API C++ Client Library"
+    },
+    "containeranalysis": {
+      "description": "Container Analysis API C++ Client Library"
+    },
+    "datacatalog": {
+      "description": "Google Cloud Data Catalog API C++ Client Library"
+    },
+    "datamigration": {
+      "description": "Database Migration API C++ Client Library"
+    },
+    "dataplex": {
+      "description": "Cloud Dataplex API C++ Client Library"
+    },
+    "dataproc": {
+      "description": "Cloud Dataproc API C++ Client Library"
+    },
+    "datastream": {
+      "description": "Datastream API C++ Client Library"
+    },
+    "debugger": {
+      "description": "Stackdriver Debugger API C++ Client Library"
+    },
+    "deploy": {
+      "description": "Google Cloud Deploy API C++ Client Library"
+    },
+    "dialogflow-cx": {
+      "description": "Cloud Dialogflow CX API C++ Client Library"
+    },
+    "dialogflow-es": {
+      "description": "Cloud Dialogflow ES API C++ Client Library"
+    },
+    "dlp": {
+      "description": "Cloud Data Loss Prevention (DLP) API C++ Client Library"
+    },
+    "documentai": {
+      "description": "Cloud Document AI API C++ Client Library"
+    },
+    "edgecontainer": {
+      "description": "Distributed Cloud Edge Container API C++ Client Library"
+    },
+    "eventarc": {
+      "description": "Eventarc API C++ Client Library"
+    },
+    "experimental-storage-grpc": {
+      "description": "The GCS+gRPC plugin"
+    },
+    "filestore": {
+      "description": "Cloud Filestore API C++ Client Library"
+    },
+    "functions": {
+      "description": "Cloud Functions API C++ Client Library"
+    },
+    "gameservices": {
+      "description": "Game Services API C++ Client Library"
+    },
+    "gkehub": {
+      "description": "GKE Hub C++ Client Library"
+    },
+    "grafeas": {
+      "description": "Protocol buffers implementing the 'Grafeas API' (metadata about software artifacts)"
+    },
+    "grpc-common": {
+      "description": "Dependencies used by all gRPC-based libraries"
+    },
+    "iam": {
+      "description": "The Google Cloud IAM C++ client library"
+    },
+    "iap": {
+      "description": "Cloud Identity-Aware Proxy API C++ Client Library"
+    },
+    "ids": {
+      "description": "Cloud IDS API C++ Client Library"
+    },
+    "iot": {
+      "description": "Cloud IoT API C++ Client Library"
+    },
+    "kms": {
+      "description": "Cloud Key Management Service (KMS) API C++ Client Library"
+    },
+    "language": {
+      "description": "Cloud Natural Language API C++ Client Library"
+    },
+    "logging": {
+      "description": "Google Cloud Logging C++ Client Library"
+    },
+    "managedidentities": {
+      "description": "Managed Service for Microsoft Active Directory API C++ Client Library"
+    },
+    "memcache": {
+      "description": "Cloud Memorystore for Memcached API C++ Client Library"
+    },
+    "monitoring": {
+      "description": "Cloud Monitoring API C++ Client Library"
+    },
+    "networkconnectivity": {
+      "description": "Network Connectivity API C++ Client Library"
+    },
+    "networkmanagement": {
+      "description": "Network Management API C++ Client Library"
+    },
+    "notebooks": {
+      "description": "Notebooks API C++ Client Library"
+    },
+    "optimization": {
+      "description": "Cloud Optimization API C++ Client Library"
+    },
+    "orgpolicy": {
+      "description": "Organization Policy API C++ Client Library"
+    },
+    "osconfig": {
+      "description": "Cloud OS Config API C++ Client library"
+    },
+    "oslogin": {
+      "description": "Cloud OS Login API C++ Client Library"
+    },
+    "policytroubleshooter": {
+      "description": "Policy Troubleshooter API C++ Client Library"
+    },
+    "privateca": {
+      "description": "Certificate Authority API C++ Client Library"
+    },
+    "profiler": {
+      "description": "Cloud Profiler API C++ Client Library"
+    },
+    "pubsub": {
+      "description": "The Google Cloud Bigtable C++ client library"
+    },
+    "recommender": {
+      "description": "Recommender C++ Client Library"
+    },
+    "redis": {
+      "description": "Google Cloud Memorystore for Redis API C++ Client Library"
+    },
+    "resourcemanager": {
+      "description": "Cloud Resource Manager API C++ Client Library"
+    },
+    "resourcesettings": {
+      "description": "Resource Settings API C++ Client Library"
+    },
+    "retail": {
+      "description": "Retail API C++ Client Library"
+    },
+    "run": {
+      "description": "Cloud Run Admin API C++ Client Library"
+    },
+    "scheduler": {
+      "description": "Cloud Scheduler API C++ Client Library"
+    },
+    "secretmanager": {
+      "description": "The Google Cloud Secret Manager C++ client library"
+    },
+    "securitycenter": {
+      "description": "Security Command Center API C++ Client Library"
+    },
+    "servicecontrol": {
+      "description": "Service Control API C++ Client Library"
+    },
+    "servicedirectory": {
+      "description": "Service Directory API C++ Client Library"
+    },
+    "servicemanagement": {
+      "description": "Service Management API C++ Client Library"
+    },
+    "serviceusage": {
+      "description": "Service Usage API C++ Client Library"
+    },
+    "shell": {
+      "description": "Cloud Shell API C++ Client Library"
+    },
+    "spanner": {
+      "description": "The Google Cloud Spanner C++ client library"
+    },
+    "speech": {
+      "description": "The Google Cloud Speech-to-Text C++ client library"
+    },
+    "storage": {
+      "description": "The Google Cloud Storage C++ client library"
+    },
+    "storagetransfer": {
+      "description": "Storage Transfer API C++ Client Library"
+    },
+    "talent": {
+      "description": "Cloud Talent Solution API C++ Client Library"
+    },
+    "tasks": {
+      "description": "The Google Cloud Tasks C++ client library"
+    },
+    "texttospeech": {
+      "description": "Cloud Text-to-Speech API C++ Client Library"
+    },
+    "tpu": {
+      "description": "Cloud TPU API C++ Client Library"
+    },
+    "trace": {
+      "description": "Stackdriver Trace API C++ Client Library"
+    },
+    "translate": {
+      "description": "Cloud Translation API C++ Client Library"
+    },
+    "video": {
+      "description": "Video Services C++ Client Library"
+    },
+    "videointelligence": {
+      "description": "Cloud Video Intelligence API C++ Client Library"
+    },
+    "vision": {
+      "description": "Cloud Vision API C++ Client Library"
+    },
+    "vmmigration": {
+      "description": "VM Migration API C++ Client Library"
+    },
+    "vmwareengine": {
+      "description": "VMware Engine API C++ Client Library"
+    },
+    "vpcaccess": {
+      "description": "Serverless VPC Access API C++ Client Library"
+    },
+    "webrisk": {
+      "description": "Web Risk API C++ Client Library"
+    },
+    "websecurityscanner": {
+      "description": "Web Security Scanner API C++ Client Library"
+    },
+    "workflows": {
+      "description": "Workflow Executions API C++ Client Library"
+    }
+  }
+}
