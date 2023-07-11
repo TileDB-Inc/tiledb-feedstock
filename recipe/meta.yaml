@@ -29,6 +29,7 @@ requirements:
     - file  # [arm64]
     - git
   host:
+    - aws-sdk-cpp 1.8.*
     - bzip2
     - curl
     - libxml2
