@@ -7,8 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 4c1b316fd626444ee4a8ae08c22f3e8a0acfe601fbc4e4683f2c490732d465d9
+  - url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
+    sha256: 4c1b316fd626444ee4a8ae08c22f3e8a0acfe601fbc4e4683f2c490732d465d9
+  - git_url: https://github.com/Microsoft/vcpkg.git
+    git_rev: 2023.06.20
+    folder: external/vcpkg
 
 build:
   number: 1
@@ -24,6 +27,7 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
+    - git
   host:
     - bzip2
     - curl
