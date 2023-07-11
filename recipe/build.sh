@@ -1,6 +1,9 @@
 #!/bin/sh
 set -exo pipefail
 
+# Copy tiledb-patches to the source directory
+cp -r ${RECIPE_DIR}/tiledb-patches ${SRC_DIR}
+
 # Use CC/CXX wrappers to disable -Werror
 export NN_CXX_ORIG=$CXX
 export NN_CC_ORIG=$CC
@@ -39,6 +42,7 @@ cmake ${CMAKE_ARGS} \
   -DTILEDB_GCS=${TILEDB_GCS} \
   -DTILEDB_S3=ON \
   -DTILEDB_SERIALIZATION=ON \
+  -DTILEDB_VCPKG=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
   ..
