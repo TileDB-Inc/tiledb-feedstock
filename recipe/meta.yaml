@@ -29,8 +29,6 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
-    - git
-    - git-lfs
   host:
     - aws-sdk-cpp 1.8.*
     - bzip2
