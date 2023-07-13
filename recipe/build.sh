@@ -2,7 +2,7 @@
 set -exo pipefail
 
 # Copy tiledb-patches to the source directory
-cp -r ${RECIPE_DIR}/tiledb-patches ${SRC_DIR}
+cp -r "${RECIPE_DIR}/tiledb-patches" "${SRC_DIR}"
 
 # Use CC/CXX wrappers to disable -Werror
 export NN_CXX_ORIG=$CXX
@@ -28,8 +28,18 @@ else
   export TILEDB_GCS=OFF
 fi
 
+print_logs()
+{
+  for f in $(find $SRC_DIR/{build,external} -name *.log);
+  do
+    echo "##[group]$f"
+    cat $f
+    echo "##[endgroup]"
+  done;
+}
+
 mkdir build && cd build
-cmake ${CMAKE_ARGS} \
+if ! cmake ${CMAKE_ARGS} \
   -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   -DCMAKE_BUILD_TYPE=Release \
   -DTILEDB_WERROR=OFF \
@@ -45,6 +55,15 @@ cmake ${CMAKE_ARGS} \
   -DTILEDB_VCPKG=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
-  ..
-make -j ${CPU_COUNT}
-make -C tiledb install
+  ..; then
+  print_logs
+  exit 1
+fi
+if ! make -j ${CPU_COUNT} then
+  print_logs
+  exit 1
+fi
+if ! make -C tiledb install then
+  print_logs
+  exit 1
+fi
