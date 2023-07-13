@@ -1,0 +1,50 @@
+diff --git a/cmake/Modules/FindAWSSDK_EP.cmake b/cmake/Modules/FindAWSSDK_EP.cmake
+--- a/cmake/Modules/FindAWSSDK_EP.cmake
++++ b/cmake/Modules/FindAWSSDK_EP.cmake
+@@ -57,11 +57,11 @@ if(TILEDB_VCPKG)
+   endif()
+ 
+   install_all_target_libs("${AWSSDK_LINK_LIBRARIES}")
+-  find_package(libxml2 CONFIG REQUIRED)
++  find_package(LibXml2 REQUIRED)
+   install_target_libs(LibXml2::LibXml2)
+ 
+   if (NOT TARGET LibLZMA::LibLZMA)
+-      find_package(liblzma REQUIRED)
++      find_package(LibLZMA REQUIRED)
+       install_target_libs(LibLZMA::LibLZMA)
+   endif()
+ 
+diff --git a/tiledb/CMakeLists.txt b/tiledb/CMakeLists.txt
+--- a/tiledb/CMakeLists.txt
++++ b/tiledb/CMakeLists.txt
+@@ -536,11 +536,11 @@ if (TILEDB_AZURE)
+ 
+   if (TILEDB_VCPKG)
+     find_package(azure-storage-blobs-cpp CONFIG REQUIRED)
+-    if (NOT TARGET LibLZMA)
++    if (NOT TARGET LibLZMA::LibLZMA)
+       find_package(LibLZMA REQUIRED)
+     endif()
+     if (NOT TARGET LibXml2::LibXml2)
+-      find_package(libxml2 CONFIG REQUIRED)
++      find_package(LibXml2 REQUIRED)
+       install_target_libs(LibXml2::LibXml2)
+     endif()
+     target_link_libraries(TILEDB_CORE_OBJECTS_ILIB
+diff --git a/tiledb/sm/filesystem/s3/STSProfileWithWebIdentityCredentialsProvider.h b/tiledb/sm/filesystem/s3/STSProfileWithWebIdentityCredentialsProvider.h
+--- a/tiledb/sm/filesystem/s3/STSProfileWithWebIdentityCredentialsProvider.h
++++ b/tiledb/sm/filesystem/s3/STSProfileWithWebIdentityCredentialsProvider.h
+@@ -55,7 +55,11 @@ namespace Auth {
+  * controlled via environment variables. For more information see
+  * https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+  */
+-class AWS_IDENTITY_MANAGEMENT_API STSProfileWithWebIdentityCredentialsProvider
++class /* AWS_IDENTITY_MANAGEMENT_API */
++    STSProfileWithWebIdentityCredentialsProvider
++    // AWS_IDENTITY_MANAGEMENT_API adds a __declspec(dllimport) on Windows
++    // which causes a link error because it tried to find the implementation
++    // of the class externally, but it is defined by ourselves.
+     : public STSProfileCredentialsProvider {
+  public:
+   /**
