@@ -1,5 +1,8 @@
 setlocal EnableDelayedExpansion
 
+REM Copy tiledb-patches to the source directory
+xcopy /Y /S /I "%RECIPE_DIR%\tiledb-patches" "%SRC_DIR%"
+
 mkdir "%SRC_DIR%"\build
 pushd "%SRC_DIR%"\build
 
@@ -17,6 +20,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_GCS=%TILEDB_GCS% ^
       -DTILEDB_S3=ON ^
       -DTILEDB_HDFS=OFF ^
+      -DTILEDB_VCPKG=ON ^
       -DCOMPILER_SUPPORTS_AVX2=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
       -Dlibxml2_DIR="%LIBRARY_PREFIX%" ^
