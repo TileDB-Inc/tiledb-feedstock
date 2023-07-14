@@ -33,6 +33,10 @@ requirements:
     - pkg-config  # [not win]
     - {{ compiler('cxx') }}
     - file  # [arm64]
+    - zip  # [not win]
+    - unzip  # [not win]
+    - curl  # [not win]
+    - tar  # [not win]
   host:
     - aws-sdk-cpp 1.8.*
     - bzip2
