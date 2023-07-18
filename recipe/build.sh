@@ -30,7 +30,7 @@ fi
 
 print_logs()
 {
-  for f in $(find $SRC_DIR/{build,external} -name *.log);
+  for f in $(find $SRC_DIR/{build,external} -name "*.log");
   do
     echo "##[group]$f"
     cat $f
