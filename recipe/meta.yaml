@@ -21,7 +21,7 @@ source:
     folder: external/vcpkg
 
 build:
-  number: 3
+  number: 4
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
