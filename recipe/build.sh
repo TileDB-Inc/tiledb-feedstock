@@ -2,7 +2,7 @@
 set -exo pipefail
 
 # Copy tiledb-patches to the source directory
-cp -r "${RECIPE_DIR}/tiledb-patches" "${SRC_DIR}"
+cp -r "${RECIPE_DIR}/tiledb-patches/." "${SRC_DIR}"
 
 # Use CC/CXX wrappers to disable -Werror
 export NN_CXX_ORIG=$CXX
