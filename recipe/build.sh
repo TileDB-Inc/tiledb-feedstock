@@ -55,15 +55,18 @@ if ! cmake ${CMAKE_ARGS} \
   -DTILEDB_VCPKG=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
-  ..; then
+  ..
+then
   print_logs
   exit 1
 fi
-if ! make -j ${CPU_COUNT} then
+if ! make -j ${CPU_COUNT}
+then
   print_logs
   exit 1
 fi
-if ! make -C tiledb install then
+if ! make -C tiledb install
+then
   print_logs
   exit 1
 fi
