@@ -47,6 +47,7 @@ requirements:
     - openssl
     - zlib
     - zstd
+    - xz
     # see: https://github.com/conda-forge/google-cloud-cpp-feedstock/pull/108,
     - libcrc32c  # [gcs == 'gcs_enabled' and win]
     - libcurl    # [gcs == 'gcs_enabled' and win]
