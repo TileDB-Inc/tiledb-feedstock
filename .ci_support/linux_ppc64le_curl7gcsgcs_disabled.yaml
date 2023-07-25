@@ -1,9 +1,7 @@
-BUILD:
-- aarch64-conda_cos7-linux-gnu
+aws_sdk_cpp:
+- 1.10.57
 bzip2:
 - '1'
-cdt_arch:
-- aarch64
 cdt_name:
 - cos7
 channel_sources:
@@ -11,7 +9,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '8'
+- '7'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -19,7 +17,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gcs:
-- gcs_enabled
+- gcs_disabled
 google_cloud_cpp:
 - '2.12'
 libxml2:
@@ -29,10 +27,11 @@ lz4_c:
 openssl:
 - '3'
 target_platform:
-- linux-aarch64
+- linux-ppc64le
+xz:
+- '5'
 zip_keys:
 - - gcs
-  - openssl
   - curl
 zlib:
 - '1.2'

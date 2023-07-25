@@ -39,7 +39,7 @@ requirements:
     - curl  # [not win]
     - tar  # [not win]
   host:
-    - aws-sdk-cpp 1.8.*
+    - aws-sdk-cpp
     - bzip2
     - curl
     - lz4-c

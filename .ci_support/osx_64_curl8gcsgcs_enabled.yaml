@@ -1,3 +1,9 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.14'
+MACOSX_SDK_VERSION:
+- '10.15'
+aws_sdk_cpp:
+- 1.10.57
 bzip2:
 - '1'
 channel_sources:
@@ -5,30 +11,29 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '7'
+- '8'
 cxx_compiler:
-- vs2019
+- clangxx
+cxx_compiler_version:
+- '15'
 gcs:
-- gcs_disabled
+- gcs_enabled
 google_cloud_cpp:
 - '2.12'
-libcrc32c:
-- '1.1'
-libcurl:
-- '8'
 libxml2:
 - '2.11'
 lz4_c:
 - 1.9.3
+macos_machine:
+- x86_64-apple-darwin13.4.0
 openssl:
-- 1.1.1
+- '3'
 target_platform:
-- win-64
-vc:
-- '14'
+- osx-64
+xz:
+- '5'
 zip_keys:
 - - gcs
-  - openssl
   - curl
 zlib:
 - '1.2'

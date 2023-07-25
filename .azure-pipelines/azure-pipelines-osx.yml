@@ -8,23 +8,17 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_curl7gcsgcs_disabledopenssl1.1.1:
-        CONFIG: osx_64_curl7gcsgcs_disabledopenssl1.1.1
+      osx_64_curl7gcsgcs_disabled:
+        CONFIG: osx_64_curl7gcsgcs_disabled
         UPLOAD_PACKAGES: 'True'
-      osx_64_curl7gcsgcs_disabledopenssl3:
-        CONFIG: osx_64_curl7gcsgcs_disabledopenssl3
+      osx_64_curl8gcsgcs_enabled:
+        CONFIG: osx_64_curl8gcsgcs_enabled
         UPLOAD_PACKAGES: 'True'
-      osx_64_curl8gcsgcs_enabledopenssl3:
-        CONFIG: osx_64_curl8gcsgcs_enabledopenssl3
+      osx_arm64_curl7gcsgcs_disabled:
+        CONFIG: osx_arm64_curl7gcsgcs_disabled
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl7gcsgcs_disabledopenssl1.1.1:
-        CONFIG: osx_arm64_curl7gcsgcs_disabledopenssl1.1.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl7gcsgcs_disabledopenssl3:
-        CONFIG: osx_arm64_curl7gcsgcs_disabledopenssl3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_curl8gcsgcs_enabledopenssl3:
-        CONFIG: osx_arm64_curl8gcsgcs_enabledopenssl3
+      osx_arm64_curl8gcsgcs_enabled:
+        CONFIG: osx_arm64_curl8gcsgcs_enabled
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
