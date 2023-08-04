@@ -18,8 +18,8 @@ gcs:
 - gcs_disabled
 google_cloud_cpp:
 - '2.12'
-libxml2:
-- '2.11'
+libiconv:
+- '1'
 lz4_c:
 - 1.9.3
 macos_machine:
