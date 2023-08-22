@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.16.0" %}
+{% set version = "2.16.3" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,20 +8,15 @@ package:
 
 source:
   - url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-    sha256: eaf47fbeb36a5fccce194b89a0101609c9122639b2c9ce590dce2e2c2b7f81f9
+    sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
     patches:
-      - 0001-Fix-order-of-azure-static-library-linking.patch
-      # https://github.com/TileDB-Inc/TileDB/pull/4160
-      - pr-4160.patch
-      # Remove after we upgrade the AWS SDK. Provides a workaround for
-      # the lack of https://github.com/awslabs/aws-c-common/pull/924.
-      - aws-shared-libs.patch
+      - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
   - git_url: https://github.com/Microsoft/vcpkg.git
     git_rev: 2023.06.20
     folder: external/vcpkg
 
 build:
-  number: 4
+  number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
