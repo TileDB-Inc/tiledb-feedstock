@@ -65,6 +65,9 @@
     },
     "wolfssl": {
       "description": "SSL support (wolfSSL)"
+    },
+    "zstd": {
+      "description": "ZStandard support (zstd)"
     }
   }
 }
