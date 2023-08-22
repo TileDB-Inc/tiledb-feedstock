@@ -17,7 +17,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DTILEDB_WERROR=OFF ^
       -DTILEDB_TESTS=OFF ^
-      -DTILEDB_AZURE=OFF ^
+      -DTILEDB_AZURE=ON ^
       -DTILEDB_GCS=%TILEDB_GCS% ^
       -DTILEDB_S3=ON ^
       -DTILEDB_HDFS=OFF ^

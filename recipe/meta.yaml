@@ -12,7 +12,7 @@ source:
     patches:
       - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
   - git_url: https://github.com/Microsoft/vcpkg.git
-    git_rev: 2023.06.20
+    git_rev: 2023.08.09
     folder: external/vcpkg
 
 build:
@@ -35,6 +35,9 @@ requirements:
     - tar  # [not win]
   host:
     - aws-sdk-cpp
+    - azure-core-cpp
+    - azure-storage-common-cpp
+    - azure-storage-blobs-cpp
     - bzip2
     - curl
     - lz4-c
