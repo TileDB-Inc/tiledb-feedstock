@@ -11,6 +11,8 @@ source:
     sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
     patches:
       - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
+      # https://github.com/TileDB-Inc/TileDB/pull/4160
+      - pr-4160.patch
   - git_url: https://github.com/microsoft/vcpkg.git
     git_rev: 2023.08.09
     folder: external/vcpkg
