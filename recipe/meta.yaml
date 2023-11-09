@@ -1,5 +1,5 @@
 {% set name = "TileDB" %}
-{% set version = "2.16.3" %}
+{% set version = "2.17.4" %}
 {% set gcs = gcs or 'gcs_disabled' %}
 
 package:
@@ -8,11 +8,7 @@ package:
 
 source:
   - url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-    sha256: bfa06f71dfe9ef4de4abae55712213ef146326c8e9b56cddcdb73d3c503f0c63
-    patches:
-      - 0001-LibXML2-needs-to-be-linked-after-Azure-libraries.patch
-      # https://github.com/TileDB-Inc/TileDB/pull/4160
-      - pr-4160.patch
+    sha256: 7ef1c88415045eda28666f7eceb75146c49443b1eee162aa28c3b7e27496b769
   - git_url: https://github.com/microsoft/vcpkg.git
     git_rev: 2023.08.09
     folder: external/vcpkg
@@ -21,7 +17,7 @@ build:
   number: 2
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
-    - {{ pin_subpackage('tiledb', min_pin='x.x', max_pin='x.x') }}
+    - {{ pin_subpackage('tiledb', max_pin='x.x') }}
   skip: true  # [win and vc<14]
 
 requirements:
@@ -44,6 +40,7 @@ requirements:
     - curl
     - lz4-c
     - google-cloud-cpp  # [gcs == 'gcs_enabled']
+    - libabseil  # [gcs == 'gcs_enabled']
     - openssl
     - zlib
     - zstd

@@ -15,11 +15,13 @@ curl:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
 gcs:
 - gcs_enabled
 google_cloud_cpp:
 - '2.12'
+libabseil:
+- '20230802'
 libxml2:
 - '2.11'
 lz4_c:
