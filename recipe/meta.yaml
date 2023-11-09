@@ -10,7 +10,7 @@ source:
   - url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
     sha256: 7ef1c88415045eda28666f7eceb75146c49443b1eee162aa28c3b7e27496b769
   - git_url: https://github.com/microsoft/vcpkg.git
-    git_rev: 2023.08.09
+    git_rev: 1b4d69f3028d74401a001aa316986a670ca6289a
     folder: external/vcpkg
 
 build:
