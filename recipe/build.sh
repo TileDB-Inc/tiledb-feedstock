@@ -22,6 +22,22 @@ if [[ $target_platform == osx-arm64  ]]; then
   export FILE_COMMAND_OVERRIDE=`which file`
 fi
 
+if [[ $target_platform == osx-arm64  ]]; then
+  export VCPKG_TARGET_TRIPLET="arm64-osx"
+fi
+if [[ $target_platform == osx-64  ]]; then
+  export VCPKG_TARGET_TRIPLET="x64-osx"
+fi
+if [[ $target_platform == linux-64  ]]; then
+  export VCPKG_TARGET_TRIPLET="x64-linux"
+fi
+if [[ $target_platform == linux-ppc64le  ]]; then
+  export VCPKG_TARGET_TRIPLET="ppc64le-linux"
+fi
+if [[ $target_platform == linux-aarch64  ]]; then
+  export VCPKG_TARGET_TRIPLET="arm64-linux"
+fi
+
 if [[ $gcs == gcs_enabled ]]; then
   export TILEDB_GCS=ON
 else
@@ -55,6 +71,7 @@ if ! cmake ${CMAKE_ARGS} \
   -DTILEDB_VCPKG=ON \
   -DTILEDB_LOG_OUTPUT_ON_FAILURE=ON \
   -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
+  -DVCPKG_TARGET_TRIPLET=${VCPKG_TARGET_TRIPLET} \
   ..
 then
   print_logs

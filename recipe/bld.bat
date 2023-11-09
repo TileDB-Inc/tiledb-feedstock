@@ -26,6 +26,7 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_SERIALIZATION=ON ^
       -Dlibxml2_DIR="%LIBRARY_PREFIX%" ^
       -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%" ^
+      -DVCPKG_TARGET_TRIPLET=x64-windows ^
       ..
 if errorlevel 1 exit 1
 
