@@ -21,7 +21,6 @@ cmake -G "NMake Makefiles" ^
       -DTILEDB_GCS=%TILEDB_GCS% ^
       -DTILEDB_S3=ON ^
       -DTILEDB_HDFS=OFF ^
-      -DTILEDB_VCPKG=ON ^
       -DCOMPILER_SUPPORTS_AVX2=OFF ^
       -DTILEDB_SERIALIZATION=ON ^
       -Dlibxml2_DIR="%LIBRARY_PREFIX%" ^
