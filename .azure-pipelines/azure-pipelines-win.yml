@@ -8,11 +8,11 @@ jobs:
     vmImage: windows-2019
   strategy:
     matrix:
-      win_64_curl7gcsgcs_disabled:
-        CONFIG: win_64_curl7gcsgcs_disabled
+      win_64_gcsgcs_disabled:
+        CONFIG: win_64_gcsgcs_disabled
         UPLOAD_PACKAGES: 'True'
-      win_64_curl8gcsgcs_enabled:
-        CONFIG: win_64_curl8gcsgcs_enabled
+      win_64_gcsgcs_enabled:
+        CONFIG: win_64_gcsgcs_enabled
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
@@ -45,6 +45,9 @@ jobs:
         PYTHONUNBUFFERED: 1
         CONFIG: $(CONFIG)
         CI: azure
+        flow_run_id: azure_$(Build.BuildNumber).$(System.JobAttempt)
+        remote_url: $(Build.Repository.Uri)
+        sha: $(Build.SourceVersion)
         UPLOAD_PACKAGES: $(UPLOAD_PACKAGES)
         UPLOAD_TEMP: $(UPLOAD_TEMP)
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)

@@ -1,9 +1,7 @@
-aws_sdk_cpp:
-- 1.10.57
 bzip2:
 - '1'
 cdt_name:
-- cos7
+- cos6
 channel_sources:
 - conda-forge
 channel_targets:
@@ -22,18 +20,21 @@ google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
+libcurl:
+- '8'
 libxml2:
 - '2.11'
 lz4_c:
 - 1.9.3
 openssl:
-- '3'
+- 1.1.1
 target_platform:
-- linux-ppc64le
+- linux-64
 xz:
 - '5'
 zip_keys:
 - - gcs
+  - openssl
   - curl
 zlib:
 - '1.2'
