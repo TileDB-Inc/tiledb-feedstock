@@ -35,8 +35,6 @@ requirements:
     - libxml2
     - xz
   host:
-    - aws-sdk-cpp
-    - aws-crt-cpp
     - azure-core-cpp
     - azure-storage-blobs-cpp
     - bzip2
