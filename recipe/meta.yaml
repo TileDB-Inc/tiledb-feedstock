@@ -32,8 +32,6 @@ requirements:
     - libxml2
     - xz
   host:
-    - azure-core-cpp
-    - azure-storage-blobs-cpp
     - bzip2
     - libcurl
     - lz4-c
