@@ -16,12 +16,6 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gcs:
 - gcs_enabled
-google_cloud_cpp:
-- '2.12'
-libabseil:
-- '20230802'
-libxml2:
-- '2.12'
 lz4_c:
 - 1.9.3
 openssl:
