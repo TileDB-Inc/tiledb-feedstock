@@ -16,3 +16,5 @@ curl:
 zip_keys:
 - openssl
 - curl
+channel_targets:
+  - tiledb for-cloud
