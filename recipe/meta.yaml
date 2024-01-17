@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 95b2278389ee00c2a90055fa748fb4a487a23f3d8680afd69b92a018d8e89aee
+  patches:
+    - remove-win32-path-length-check.patch
 
 build:
   number: 0
