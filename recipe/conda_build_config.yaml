@@ -10,3 +10,7 @@ cxx_compiler:
 gcs:
 - gcs_disabled
 - gcs_enabled
+channel_sources:
+  - tiledb/label/aws-upstream,conda-forge
+channel_targets:
+  - tiledb aws-upstream
