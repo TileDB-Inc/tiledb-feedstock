@@ -25,6 +25,8 @@ requirements:
     - {{ compiler('cxx') }}
     - file  # [arm64]
   host:
+    - aws-sdk-cpp
+    - aws-crt-cpp
     - azure-core-cpp
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
