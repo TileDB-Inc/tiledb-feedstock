@@ -1,11 +1,15 @@
+aws_crt_cpp:
+- 0.26.0
+aws_sdk_cpp:
+- 1.11.210
 bzip2:
 - '1'
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge
+- tiledb/label/aws-upstream,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb aws-upstream
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -13,25 +17,21 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gcs:
-- gcs_disabled
+- gcs_enabled
 google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
 libcurl:
-- '7'
+- '8'
 libxml2:
 - '2'
 lz4_c:
 - 1.9.3
 openssl:
-- 1.1.1
+- '3'
 target_platform:
 - linux-64
-zip_keys:
-- - gcs
-  - openssl
-  - libcurl
 zlib:
 - '1.2'
 zstd:

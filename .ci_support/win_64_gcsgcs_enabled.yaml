@@ -1,9 +1,13 @@
+aws_crt_cpp:
+- 0.26.0
+aws_sdk_cpp:
+- 1.11.210
 bzip2:
 - '1'
 channel_sources:
-- conda-forge
+- tiledb/label/aws-upstream,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb aws-upstream
 cxx_compiler:
 - vs2019
 gcs:
@@ -26,10 +30,6 @@ target_platform:
 - win-64
 vc:
 - '14'
-zip_keys:
-- - gcs
-  - openssl
-  - libcurl
 zlib:
 - '1.2'
 zstd:

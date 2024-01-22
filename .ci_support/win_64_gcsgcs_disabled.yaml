@@ -1,37 +1,35 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+aws_crt_cpp:
+- 0.26.0
+aws_sdk_cpp:
+- 1.11.210
 bzip2:
 - '1'
 channel_sources:
-- conda-forge
+- tiledb/label/aws-upstream,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb aws-upstream
 cxx_compiler:
-- clangxx
-cxx_compiler_version:
-- '16'
+- vs2019
 gcs:
-- gcs_enabled
+- gcs_disabled
 google_cloud_cpp:
 - '2.12'
 libabseil:
 - '20230802'
+libcrc32c:
+- '1.1'
 libcurl:
 - '8'
 libxml2:
 - '2'
 lz4_c:
 - 1.9.3
-macos_machine:
-- arm64-apple-darwin20.0.0
 openssl:
 - '3'
 target_platform:
-- osx-arm64
-zip_keys:
-- - gcs
-  - openssl
-  - libcurl
+- win-64
+vc:
+- '14'
 zlib:
 - '1.2'
 zstd:

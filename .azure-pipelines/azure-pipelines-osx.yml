@@ -8,23 +8,17 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_gcsgcs_disabledlibcurl7openssl1.1.1:
-        CONFIG: osx_64_gcsgcs_disabledlibcurl7openssl1.1.1
+      osx_64_gcsgcs_disabled:
+        CONFIG: osx_64_gcsgcs_disabled
         UPLOAD_PACKAGES: 'True'
-      osx_64_gcsgcs_disabledlibcurl7openssl3:
-        CONFIG: osx_64_gcsgcs_disabledlibcurl7openssl3
+      osx_64_gcsgcs_enabled:
+        CONFIG: osx_64_gcsgcs_enabled
         UPLOAD_PACKAGES: 'True'
-      osx_64_gcsgcs_enabledlibcurl8openssl3:
-        CONFIG: osx_64_gcsgcs_enabledlibcurl8openssl3
+      osx_arm64_gcsgcs_disabled:
+        CONFIG: osx_arm64_gcsgcs_disabled
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_gcsgcs_disabledlibcurl7openssl1.1.1:
-        CONFIG: osx_arm64_gcsgcs_disabledlibcurl7openssl1.1.1
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_gcsgcs_disabledlibcurl7openssl3:
-        CONFIG: osx_arm64_gcsgcs_disabledlibcurl7openssl3
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_gcsgcs_enabledlibcurl8openssl3:
-        CONFIG: osx_arm64_gcsgcs_enabledlibcurl8openssl3
+      osx_arm64_gcsgcs_enabled:
+        CONFIG: osx_arm64_gcsgcs_enabled
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
@@ -47,5 +41,3 @@ jobs:
     displayName: Run OSX build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-      FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
