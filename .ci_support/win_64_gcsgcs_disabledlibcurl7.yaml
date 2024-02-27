@@ -1,3 +1,7 @@
+aws_crt_cpp:
+- 0.26.2
+aws_sdk_cpp:
+- 1.11.267
 bzip2:
 - '1'
 channel_sources:
@@ -8,16 +12,10 @@ cxx_compiler:
 - vs2019
 gcs:
 - gcs_disabled
-libabseil:
-- '20230802'
 libcrc32c:
 - '1.1'
 libcurl:
 - '7'
-libgoogle_cloud_devel:
-- '2.17'
-libgoogle_cloud_storage_devel:
-- '2.17'
 libxml2:
 - '2'
 lz4_c:
