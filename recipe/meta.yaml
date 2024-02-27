@@ -30,9 +30,7 @@ requirements:
     - azure-storage-common-cpp
     - azure-storage-blobs-cpp
     - bzip2
-    - libabseil                         # [gcs == 'gcs_enabled']
-    - libgoogle-cloud-devel             # [gcs == 'gcs_enabled']
-    - libgoogle-cloud-storage-devel     # [gcs == 'gcs_enabled']
+    - libgoogle-cloud-storage           # [gcs == 'gcs_enabled']
     - libcurl
     - lz4-c
     - openssl
