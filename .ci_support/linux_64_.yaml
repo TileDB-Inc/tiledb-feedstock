@@ -15,13 +15,13 @@ bzip2:
 c_stdlib:
 - sysroot
 c_stdlib_version:
-- '2.12'
+- '2.17'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
-- conda-forge
+- tiledb/label/nightlies,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb nightlies
 curl:
 - '8'
 cxx_compiler:
