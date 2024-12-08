@@ -11,3 +11,7 @@ c_stdlib_version:    # [win]
 # https://github.com/conda-forge/tiledb-feedstock/pull/367
 cxx_compiler_version:  # [osx and arm64]
   - 17                 # [osx and arm64]
+channel_sources:
+  - tiledb/label/nightlies,conda-forge
+channel_targets:
+  - tiledb nightlies
