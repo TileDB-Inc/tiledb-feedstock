@@ -19,9 +19,9 @@ c_stdlib_version:
 capnproto:
 - 1.0.2
 channel_sources:
-- conda-forge
+- tiledb/label/nightlies,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb nightlies
 cxx_compiler:
 - vs2022
 fmt:
@@ -46,8 +46,6 @@ spdlog:
 - '1.15'
 target_platform:
 - win-64
-tiledb:
-- '2.27'
 zlib:
 - '1'
 zstd:
