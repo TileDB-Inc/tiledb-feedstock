@@ -7,3 +7,7 @@ cxx_compiler:  # [win]
 # tooling
 c_stdlib_version:    # [win]
   - 2022             # [win]
+channel_sources:
+  - tiledb/label/nightlies,conda-forge
+channel_targets:
+  - tiledb nightlies
