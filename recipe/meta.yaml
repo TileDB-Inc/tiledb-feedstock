@@ -1,16 +1,17 @@
 {% set name = "TileDB" %}
-{% set version = "2.27.2" %}
+{% set version = "2.29.0.2025_05_09" %}
 
 package:
   name: tiledb
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 7522e83599421b35a554c9eae84903e951a46a1b6d9c7e32409492f938b63ad2
+  git_url: https://github.com/TileDB-Inc/{{ name }}.git
+  git_rev: 5e0c3198d7403e73bb3bd99e26cbf3fa8248811e
+  git_depth: 10
 
 build:
-  number: 7
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
