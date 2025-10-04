@@ -1,18 +1,19 @@
 {% set name = "TileDB" %}
-{% set version = "2.29.0" %}
+{% set version = "2.30.0.2025_10_03" %}
 
 package:
   name: tiledb
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 5340e820323cdd48eac3cbd28ad55c1724f3f0b20dd2b88d196f336cffd92cdf
+  git_url: https://github.com/TileDB-Inc/{{ name }}.git
+  git_rev: 371ae036dde9b70dc97f5dfee3c8c5bae970a662
+  git_depth: 10
   patches:
     - azure-fix.patch
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # https://abi-laboratory.pro/?view=timeline&l=tiledb
     - {{ pin_subpackage('tiledb', max_pin='x.x') }}
@@ -33,6 +34,7 @@ requirements:
     - libxml2  # [not win]
     - capnproto
   host:
+    - azure-storage-files-datalake-cpp
     - aws-sdk-cpp
     - aws-crt-cpp
     - azure-core-cpp
