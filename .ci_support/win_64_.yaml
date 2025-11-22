@@ -14,14 +14,16 @@ azure_storage_files_datalake_cpp:
 - 12.13.0
 bzip2:
 - '1'
+c_blosc2:
+- '2.22'
 c_stdlib:
 - vs
 capnproto:
 - 1.2.0
 channel_sources:
-- conda-forge
+- tiledb/label/nightlies,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb nightlies
 cxx_compiler:
 - vs2022
 fmt:
