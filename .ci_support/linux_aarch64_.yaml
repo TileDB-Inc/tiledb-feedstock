@@ -23,9 +23,9 @@ c_stdlib_version:
 capnproto:
 - 1.3.0
 channel_sources:
-- conda-forge
+- tiledb/label/nightlies,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb nightlies
 curl:
 - '8'
 cxx_compiler:
