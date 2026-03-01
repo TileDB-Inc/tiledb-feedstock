@@ -1,0 +1,4 @@
+channel_sources:
+  - tiledb/label/nightlies,conda-forge
+channel_targets:
+  - tiledb nightlies
