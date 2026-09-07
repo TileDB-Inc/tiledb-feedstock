@@ -42,7 +42,8 @@ call :start_group "Configuring conda"
 
 :: Activate the base conda environment
 echo Activating environment
-call "%MINIFORGE_HOME%\Scripts\activate.bat"
+set "CONDA_EXE=%MINIFORGE_HOME%\Scripts\conda.exe"
+call "%MINIFORGE_HOME%\condabin\conda.bat" activate "%MINIFORGE_HOME%"
 :: Configure the solver
 set "CONDA_SOLVER=libmamba"
 if !errorlevel! neq 0 exit /b !errorlevel!
@@ -109,19 +110,17 @@ if /i "%CI%" == "azure" (
     )
     set "TEMP=%UPLOAD_TEMP%"
 )
+set "UPLOAD_ON_BRANCH=nightly-build"
+:: Note, this needs GIT_BRANCH too
 
 :: Validate
-call :start_group "Validating outputs"
-validate_recipe_outputs "%FEEDSTOCK_NAME%"
-if !errorlevel! neq 0 exit /b !errorlevel!
-call :end_group
 
 if /i "%UPLOAD_PACKAGES%" == "true" (
     if /i "%IS_PR_BUILD%" == "false" (
         call :start_group "Uploading packages"
         if not exist "%TEMP%\" md "%TEMP%"
         set "TMP=%TEMP%"
-        upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
+        upload_package  .\ ".\recipe" .ci_support\%CONFIG%.yaml
         if !errorlevel! neq 0 exit /b !errorlevel!
         call :end_group
     )

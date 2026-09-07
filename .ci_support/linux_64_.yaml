@@ -1,5 +1,5 @@
 aws_crt_cpp:
-- 0.40.1
+- 0.42.3
 aws_sdk_cpp:
 - 1.11.833
 azure_core_cpp:
@@ -23,15 +23,15 @@ c_stdlib_version:
 capnproto:
 - 1.5.0
 channel_sources:
-- conda-forge
+- tiledb/label/nightlies,conda-forge
 channel_targets:
-- conda-forge main
+- tiledb nightlies
 curl:
 - '8'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '14'
+- '15'
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma10
 fmt:
