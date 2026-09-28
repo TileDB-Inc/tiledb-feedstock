@@ -32,6 +32,7 @@ jobs:
         CONDA_BLD_PATH: $(build_workspace_dir)
         MINIFORGE_HOME: $(tools_install_dir)
         PYTHONUNBUFFERED: 1
+        UPLOAD_ON_BRANCH: nightly-build
         UPLOAD_PACKAGES: $(UPLOAD_PACKAGES)
         UPLOAD_TEMP: $(UPLOAD_TEMP)
         build_platform: $(build_platform)
@@ -39,5 +40,3 @@ jobs:
         remote_url: $(Build.Repository.Uri)
         sha: $(Build.SourceVersion)
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
